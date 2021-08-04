@@ -1,0 +1,21 @@
+{
+  "name": "bot-price-puppeteer",
+  "version": "1.0.0",
+  "description": "bot-price-puppeteer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeMorini/bot-price-puppeteer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeMorini/bot-price-puppeteer/issues"
+  },
+  "homepage": "https://github.com/JeMorini/bot-price-puppeteer#readme"
+}
