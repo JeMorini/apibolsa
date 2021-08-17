@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/JeMorini/bot-price-puppeteer/issues"
   },
-  "homepage": "https://github.com/JeMorini/bot-price-puppeteer#readme"
+  "homepage": "https://github.com/JeMorini/bot-price-puppeteer#readme",
+  "dependencies": {
+    "puppeteer": "^10.2.0"
+  }
 }

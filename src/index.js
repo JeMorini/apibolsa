@@ -12,4 +12,16 @@ const puppeteer = require("puppeteer");
   console.log(data);
 
   await browser.close();
+
+  const api = [];
+  for (let i = 0; i < data.length - 4; i++) {
+    const obj = {};
+    obj.ticker = data[i];
+    obj.name = data[i + 1];
+    obj.price = data[i + 2];
+    obj.variation = data[i + 3];
+    api.push(obj);
+  }
+
+  console.log(api);
 })();
