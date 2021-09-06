@@ -9,17 +9,18 @@ const puppeteer = require("puppeteer");
       return td.innerText;
     })
   );
-  console.log(data);
 
   await browser.close();
 
   const api = [];
-  for (let i = 0; i < data.length - 4; i++) {
+  for (let i = 1; i < data.length - 4; i++) {
     const obj = {};
-    obj.ticker = data[i];
-    obj.name = data[i + 1];
-    obj.price = data[i + 2];
-    obj.variation = data[i + 3];
+    obj.name = data[i];
+    obj.last = data[i + 1];
+    obj.max = data[i + 2];
+    obj.min = data[i + 3];
+    obj.varPrice = data[i + 4];
+    obj.varPercentage = data[i + 5];
     api.push(obj);
   }
 
