@@ -5,8 +5,8 @@ const puppeteer = require("puppeteer");
 
 let api = [];
 
-try {
-  setInterval(async () => {
+setInterval(async () => {
+  try {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
     await page.goto("https://br.investing.com/equities/");
@@ -41,13 +41,9 @@ try {
         api,
       });
     });
-  }, 10000);
-} catch {
-  router.get("/", function (req, res, next) {
-    res.status(200).send({
-      message: "error",
-    });
-  });
-}
+  } catch (err) {
+    console.log(err);
+  }
+}, 10000);
 
 module.exports = router;
