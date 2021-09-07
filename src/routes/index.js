@@ -5,10 +5,10 @@ const puppeteer = require("puppeteer");
 
 let api = [];
 
-setInterval(async () => {
+async function getData() {
   try {
     const browser = await puppeteer.launch({
-      headless: true,
+      headless: false,
       args: ["--no-sandbox", "--disable-setuid-sandbox"],
     });
     const page = await browser.newPage();
@@ -44,9 +44,12 @@ setInterval(async () => {
         api,
       });
     });
+    setTimeout(getData(), 1000);
   } catch (err) {
     console.log(err);
   }
-}, 10000);
+}
+
+getData();
 
 module.exports = router;
