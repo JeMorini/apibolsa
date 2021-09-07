@@ -1,2 +1,2 @@
-# bot-price-puppeteer
-bot-price-puppeteer
+# apibolsa
+Api com as cotações da bolsa de valores
