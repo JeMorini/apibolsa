@@ -40,6 +40,6 @@ setInterval(async () => {
       api,
     });
   });
-}, 10000).catch((err) => console.log(err));
+}, 10000);
 
 module.exports = router;
