@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "express": "^4.15.4",
+    "heroku": "^7.59.0",
     "nodemon": "^2.0.12",
     "puppeteer": "^10.2.0"
   },
